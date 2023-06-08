@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiUrl: "https://localhost:7140"
+  apiUrl: "https://karn-productapp.azurewebsites.net/"
 };
 
 /*
