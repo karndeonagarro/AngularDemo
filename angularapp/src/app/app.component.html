@@ -1,0 +1,51 @@
+<h1 id="tableLabel">Product List</h1>
+
+<p>This component demonstrates fetching data from the server.</p>
+
+
+<p *ngIf="!products"><em>Loading... </em></p>
+
+<table *ngIf="products">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Category</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of products">
+      <td>{{ product.name }}</td>
+      <td>{{ product.description }}</td>
+      <td>{{ product.category }}</td>
+      <td>{{ product.price }}</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+<!--<table *ngIf="products">
+  <thead>
+    <tr>
+      <th (click)="onSort('name')">Name</th>
+      <th (click)="onSort('Description')">Description</th>
+      <th (click)="onSort('category')">Category</th>
+      <th (click)="onSort('price')">Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of products">
+      <td>{{ product.name }}</td>
+      <td>{{ product.description }}</td>
+      <td>{{ product.category }}</td>
+      <td>{{ product.price }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<div>
+  <button [disabled]="pageNumber === 1" (click)="onPageChange(pageNumber - 1)">Previous</button>
+  <button (click)="onPageChange(pageNumber + 1)">Next</button>
+</div>-->
